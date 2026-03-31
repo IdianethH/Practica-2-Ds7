@@ -7,7 +7,7 @@
 </head>
 <body>
        
-<form name="formulario" action="0.13-php-foreach-post-get.php" method="POST">
+<form action="" method="POST">
 Introduce tu nombre: <input type="text" name="nombre">
 Introduce la edad: <input type="text" name="edad">
 <input type="submit"value="Enviar">
@@ -18,7 +18,7 @@ if ($_POST)
     {
     foreach ($_POST as $clave=>$valor)
         {
-            echo "El valor de $clave es: $valor";
+            echo "El valor de $clave es: $valor <br>";
         }    
     }
 ?>
